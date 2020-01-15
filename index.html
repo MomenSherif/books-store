@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Books Store</title>
+</head>
+
+<body>
+  <main class="main-section d-flex align-items-center justify-content-center">
+    <form class="books-number-form w-75">
+      <div class="form-group">
+        <input type="number" class="form-control form-control-lg" name="booksNumber" placeholder="How many books!!"
+          min="1" autofocus required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block btn-lg">Submit</button>
+    </form>
+  </main>
+
+  <div class="container d-none">
+    <div class="book-details-section py-5 h6">
+      <form class="book-details-form">
+        <form>
+
+          <div class="form-group">
+            <label for="bookNumber">Book Number</label>
+            <input type="text" id="bookNumber" name="bookNumber" class="form-control" value="1" disabled>
+          </div>
+
+
+          <div class="form-group">
+            <label for="bookName">Book Name</label>
+            <input type="text" id="bookName" name="bookName" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="bookPrice">Book Price</label>
+            <input type="number" id="bookPrice" name="bookPrice" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="publishDate">Publish Date</label>
+            <input type="date" id="publishDate" name="publishDate" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="authorName">Author Name</label>
+            <input type="text" id="authorName" name="authorName" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="authorEmail">Author Email</label>
+            <input type="email" id="authorEmail" name="authorEmail" class="form-control" required>
+          </div>
+
+          <div class="d-flex">
+            <button type="submit" class="btn btn-primary flex-grow-1 mr-5">Add</button>
+            <button type="reset" class="btn btn-danger flex-grow-1 ml05">Reset</button>
+          </div>
+        </form>
+      </form>
+    </div>
+  </div>
+
+  <div class="table-container d-none container  py-5">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Book Name</th>
+          <th scope="col">Book Price</th>
+          <th scope="col">Publish Date</th>
+          <th scope="col">Author Name</th>
+          <th scope="col">Author Email</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </div>
+  <script src="app.js" type="module"></script>
+</body>
+
+</html>
